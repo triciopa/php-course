@@ -13,6 +13,7 @@
   <li><a href="while-dowhileloop.php">While & Do While Loop</a></li>
   <li><a href="ifstatement.php">Simple If Statement</a></li>
   <li><a href="switchstatement.php">Simple Switch Statement</a></li>
+  <li><a href="stringmanip.php">String Manipulation</a></li>
 
   <h1>Hello World</h1>
 
