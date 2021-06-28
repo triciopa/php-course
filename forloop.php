@@ -15,7 +15,7 @@
       echo '<p>Hello World</p>';
     }
 
-    for ($i= 5; $i > 1; $i--) { 
+    for ($i= 5; $i > 0; $i--) { 
       echo "<p>The count is: $i</p>";
     }
 
