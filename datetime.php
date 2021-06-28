@@ -21,7 +21,7 @@
     print date("d/m/y G.i:s<br>", time()) . '<br>';
     print "Today is :";
     echo "<br>";
-    print date("j of F Y, \a\\t g.i a", time());
+    print date("j o F Y, \a\\t g.i a", time());
   ?>
   
 </body>
