@@ -14,6 +14,7 @@
   <li><a href="ifstatement.php">Simple If Statement</a></li>
   <li><a href="switchstatement.php">Simple Switch Statement</a></li>
   <li><a href="stringmanip.php">String Manipulation</a></li>
+  <li><a href="datetime.php">Date and Time</a></li>
 
   <h1>Hello World</h1>
 
