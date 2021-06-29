@@ -33,5 +33,4 @@
     echo "<p>$reference</p>";
   ?>
   
-</body>
-</html>
+  <?php require 'includes/footer.php' ?>

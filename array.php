@@ -1,4 +1,4 @@
-<?php include 'includes/header.php' ?>
+<?php include 'includes/header.php' ?> // INCLUDE: searches for the page, if it's not there, no crash.
 
   <h1>Arrays</h1>
   <?php
@@ -22,5 +22,4 @@
   
   ?>
   
-</body>
-</html>
+  <?php require 'includes/footer.php' ?> // REQUIRE: if file is not there, page crashes

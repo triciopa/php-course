@@ -17,5 +17,4 @@
     print date("j o F Y, \a\\t g.i a", time());
   ?>
   
-</body>
-</html>
+  <?php require 'includes/footer.php' ?>

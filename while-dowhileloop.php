@@ -21,5 +21,5 @@
       echo $grade--;      
     }while($grade > 5);
   ?>
-</body>
-</html>
+  
+<?php require 'includes/footer.php' ?>
