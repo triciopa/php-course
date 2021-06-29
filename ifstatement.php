@@ -1,8 +1,11 @@
-<?php include 'includes/header.php' ?>
+<?php 
+  $title = "If Statements";
+  include 'includes/header.php'  
+?>
 
-  <?php
+  <h1><?php echo $title ?></h1>
 
-    echo '<h2>If statement</h2>';
+  <?php  
 
     $grade = 50;
     // ===, ==, >, <, <=, >=

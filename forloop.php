@@ -1,6 +1,9 @@
-<?php include 'includes/header.php' ?>
+<?php 
+  $title = "For Loops";
+  include 'includes/header.php'  
+?>
 
-  <h1>For Loops</h1> 
+  <h1><?php echo $title ?></h1>
 
   <?php
 

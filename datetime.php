@@ -1,6 +1,9 @@
-<?php include 'includes/header.php' ?>
+<?php 
+  $title = "Date and Time";
+  include 'includes/header.php'  
+?>
 
-  <h1>Date and Time</h1>
+  <h1><?php echo $title ?></h1>
 
   <?php
   $datenow = getdate();    

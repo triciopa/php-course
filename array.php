@@ -1,6 +1,10 @@
-<?php include 'includes/header.php' ?> // INCLUDE: searches for the page, if it's not there, no crash.
+<?php 
+  $title = "Arrays and Printouts";
+  include 'includes/header.php'  
+?>
 
-  <h1>Arrays</h1>
+  <h1><?php echo $title ?></h1>
+  
   <?php
     // Variable
     $num = 3;
@@ -22,4 +26,4 @@
   
   ?>
   
-  <?php require 'includes/footer.php' ?> // REQUIRE: if file is not there, page crashes
+  <?php require 'includes/footer.php' ?>

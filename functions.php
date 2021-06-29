@@ -1,6 +1,9 @@
-<?php include 'includes/header.php' ?>
+<?php 
+  $title = "Functions";
+  include 'includes/header.php'  
+?>
 
-  <h1>Functions</h1>
+  <h1><?php echo $title ?></h1>
 
   <?php
     //Defining a function

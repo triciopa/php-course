@@ -1,6 +1,10 @@
-<?php include 'includes/header.php' ?>
+<?php 
+  $title = "Index";
+  include 'includes/header.php'
+  // INCLUDE: searches for the page, if it's not there, no crash.
+?>
 
-  <h1>Hello PHP</h1>
+  <h1><?php echo $title ?></h1>
 
  <?php
     // Printing to HTML using echo
@@ -19,4 +23,4 @@
   ?>
 
 
-<?php require 'includes/footer.php' ?>
+<?php require 'includes/footer.php'  // REQUIRE: if file is not there, page crashes ?>

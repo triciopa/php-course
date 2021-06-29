@@ -1,6 +1,10 @@
-<?php include 'includes/header.php' ?>
+<?php 
+  $title = "Strings manipulations";
+  include 'includes/header.php'  
+?>
 
-  <h1>Strings</h1>
+  <h1><?php echo $title ?></h1>
+
   <?php
     $phrase1 = "- 'How are you?'";
     $phrase2 = "- 'Fine, and you?'";
