@@ -16,14 +16,15 @@
   <title>PHP - <?php echo $title ?></title>
 </head>
 <body>
-  <h2>Follow each link to the page example</h2>
-  <ul>
-    <li><a href="array.php">Simple Array and Printouts</a></li>
-    <li><a href="forloop.php">Simple For Loop</a></li>
-    <li><a href="while-dowhileloop.php">While & Do While Loop</a></li>
-    <li><a href="ifstatement.php">Simple If Statement</a></li>
-    <li><a href="switchstatement.php">Simple Switch Statement</a></li>
-    <li><a href="stringmanip.php">String Manipulation</a></li>
-    <li><a href="datetime.php">Date and Time</a></li>
-    <li><a href="functions.php">Functions</a></li>
-  </ul>
+  <div class="container">    
+    <ul class="nav nav-tabs justify-content-center nav-fill">
+      <li class="nav-item"><a class="nav-link" href="array.php">Arrays</a></li>
+      <li class="nav-item"><a class="nav-link" href="forloop.php">For Loop</a></li>
+      <li class="nav-item"><a class="nav-link" href="while-dowhileloop.php">While & Do While</a></li>
+      <li class="nav-item"><a class="nav-link" href="ifstatement.php">If Statement</a></li>
+      <li class="nav-item"><a class="nav-link" href="switchstatement.php">Switch Statement</a></li>
+      <li class="nav-item"><a class="nav-link" href="stringmanip.php">String Manipulation</a></li>
+      <li class="nav-item"><a class="nav-link" href="datetime.php">Date and Time</a></li>
+      <li class="nav-item"><a class="nav-link" href="functions.php">Functions</a></li>
+    </ul>
+  
