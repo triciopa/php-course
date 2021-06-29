@@ -15,6 +15,7 @@
   <li><a href="switchstatement.php">Simple Switch Statement</a></li>
   <li><a href="stringmanip.php">String Manipulation</a></li>
   <li><a href="datetime.php">Date and Time</a></li>
+  <li><a href="functions.php">Functions</a></li>
 
   <h1>Hello World</h1>
 
