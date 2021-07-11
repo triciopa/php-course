@@ -27,10 +27,10 @@
     <div class="mb-3">
       <label for="specialty" class="form-label">Area of Expertise</label>
       <select class="form-select" id="specialty" name="specialty">
-        <option selected>Database Admin</option>
-        <option value="1">Software Developer</option>
-        <option value="2">Web Administrator</option>
-        <option value="3">Other</option>
+        <option value="1" selected>Database Admin</option>
+        <option value="2">Software Developer</option>
+        <option value="3">Web Administrator</option>
+        <option value="4">Other</option>
       </select>
     </div>
 

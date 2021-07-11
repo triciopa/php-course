@@ -9,9 +9,12 @@
 
   try {
     $pdo = new PDO($dsn, $user, $pass);
-    echo 'Database connected';
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   } catch(PDOException $e) {
-    echo '<h3 style="color:red">No database connection</h3>';
-    // throw new PDOException($e->getMessage());
+    // echo '<h3 style="color:red">No database connection</h3>';
+    throw new PDOException($e->getMessage());
   }
+
+  require_once 'crud.php';
+  $crud = new crud($pdo);
 ?>
