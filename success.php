@@ -5,19 +5,35 @@
 
   <h1 class="success">You have been registered</h1>
 
-  <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <div class="card" style="width: 18rem;">  
     <div class="card-body">
-      <h5 class="card-title"><?php echo $_GET['firstname'] . ' ' . $_GET['lastname']; ?></h5>
-      <h6 class="card-subtitle mb-2 text-muted"><?php echo $_GET['specialty']; ?></h6>
+      <h5 class="card-title"><?php 
+        // echo $_GET['firstname'] . ' ' . $_GET['lastname'];
+        echo $_POST['firstname'] . ' ' . $_POST['lastname'];
+
+      ?></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><?php
+         // echo $_GET['specialty'];
+         echo $_POST['specialty'];
+        ?>
+      </h6>
       <p class="card-text">
-        <?php echo $_GET['dob']; ?>
+        <?php
+          // echo $_GET['dob'];
+         echo $_POST['dob'];
+        ?>
       </p>
       <p class="card-text">
-        <?php echo $_GET['email']; ?>
+        <?php
+        //  echo $_GET['email'];
+         echo $_POST['email'];
+        ?>
       </p>
       <p class="card-text">
-        <?php echo $_GET['phone']; ?>
+        <?php
+          // echo $_GET['phone'];
+         echo $_POST['phone'];
+        ?>
       </p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>

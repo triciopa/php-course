@@ -5,7 +5,8 @@
 
   <h1 class="text-center">Registration for IT conference</h1>
 
-  <form method="get" action="success.php">
+  <!-- <form method="get" action="success.php"> -->
+  <form method="POST" action="success.php">
     <div class="mb-3">
       <label for="firstname" class="form-label">First Name</label>
       <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" name="firstname">
