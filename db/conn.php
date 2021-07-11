@@ -9,8 +9,9 @@
 
   try {
     $pdo = new PDO($dsn, $user, $pass);
-    echo 'Hello Database';
+    echo 'Database connected';
   } catch(PDOException $e) {
-    throw new PDOException($e->getMessage());
+    echo '<h3 style="color:red">No database connection</h3>';
+    // throw new PDOException($e->getMessage());
   }
 ?>
