@@ -54,6 +54,12 @@
       <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
     </div>
 
+    <div class="mb-3 custom-file">
+      <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar">
+      <label for="avatar" class="custom-file-label">Choose File</label>
+      <small id="avatar" class="form-text text-warning">File Upload is optional</small>
+    </div>
+
     <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
   </form>
 
