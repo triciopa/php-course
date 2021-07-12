@@ -15,7 +15,7 @@
     $result = $crud->edit($id, $fname, $lname, $dob, $email, $contact, $specialty);
     // Redirect to index.php
     if($result){
-      header("Location: viewrecords.php");
+      header("Location: viewrecords.php");      
     } else {
       // echo 'edit Error';
       include 'includes/errormessage.php';
@@ -23,5 +23,6 @@
   } else {
     // echo 'load error';
     include 'includes/errormessage.php';
+    header("Location: viewrecords.php");
   }
 ?>
