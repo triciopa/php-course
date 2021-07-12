@@ -11,8 +11,18 @@
     $email = $_POST['email'];
     $contact = $_POST['phone'];
     $specialty = $_POST['specialty'];
+
+    $orig_file = $_FILES["avatar"]["tmp_name"]; 
+    $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+    $target_dir = 'uploads/';
+    $destination = "$target_dir$contact.$ext";
+    move_uploaded_file($orig_file,$destination);
+    exit();
+
+
     // Call function to insert and track if success or not
     $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact, $specialty);
+    $specialtyName = $crud->getSpecialtyById($specialty);
 
     if($isSuccess) {
       // echo '<h1 class="text-center text-success">You have been registered</h1>';
