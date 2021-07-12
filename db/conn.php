@@ -26,4 +26,6 @@
 
   require_once 'crud.php';
   $crud = new crud($pdo);
+  require_once 'user.php';
+  $user = new user($pdo);
 ?>
