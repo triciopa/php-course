@@ -1,17 +1,17 @@
 <?php
   // Development Connection
-  $host = '127.0.0.1';
-  $db = 'attendance_db';
-  $user = 'root';
-  $pass = '';
-  $charset = 'utf8mb4';
+  // $host = '127.0.0.1';
+  // $db = 'attendance_db';
+  // $user = 'root';
+  // $pass = '';
+  // $charset = 'utf8mb4';
   
   // Remote Database Connection 
-  // $host = 'sql10.freesqldatabase.com';
-  // $db = 'sql10424585';
-  // $user = 'sql10424585';
-  // $pass = 'cLdbmRUMCb';
-  // $charset = 'utf8mb4';  
+  $host = 'sql10.freesqldatabase.com';
+  $db = 'sql10424585';
+  $user = 'sql10424585';
+  $pass = 'cLdbmRUMCb';
+  $charset = 'utf8mb4';  
 
   $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
