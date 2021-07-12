@@ -29,6 +29,7 @@ include_once 'includes/session.php';
           <div class="navbar-nav me-auto">
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             <a class="nav-link" href="viewrecords.php">View Attendees</a>                     
+            <a class="nav-link" href="basics/index.php">Basics</a>                     
           </div>
           <div class="navbar-nav mr-auto">
             <?php
