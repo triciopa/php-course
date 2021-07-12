@@ -12,16 +12,14 @@
     $contact = $_POST['phone'];
     $specialty = $_POST['specialty'];
 
-    $orig_file = $_FILES["avatar"]["tmp_name"]; 
+    $orig_file = $_FILES["avatar"]["tmp_name"];
     $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
     $target_dir = 'uploads/';
     $destination = "$target_dir$contact.$ext";
-    move_uploaded_file($orig_file,$destination);
-    exit();
-
+    move_uploaded_file($orig_file,$destination);  
 
     // Call function to insert and track if success or not
-    $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact, $specialty);
+    $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact, $specialty, $destination);
     $specialtyName = $crud->getSpecialtyById($specialty);
 
     if($isSuccess) {
@@ -33,7 +31,10 @@
     }
   }
 ?>
-
+  <img src="<?php echo empty($ext) ? "uploads/default.png" : $destination; ?>" alt="User Image" class="rounded-circle" style="width: 20%; height: 20%">
+  <p>Extension: <?php echo empty($ext) ? "empty" : $ext ?></p>
+  <p>File name: <?php echo empty($_FILES["avatar"]["name"]) ? "empty" : $_FILES["avatar"]["name"] ?></p>
+  <p>File temp name: <?php echo empty($_FILES["avatar"]["tmp_name"]) ? "empty" : $_FILES["avatar"]["tmp_name"] ?></p>
   <div class="card" style="width: 18rem;">  
     <div class="card-body">
       <h5 class="card-title"><?php 

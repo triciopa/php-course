@@ -15,6 +15,8 @@
   
 ?>
 
+<img src="<?php echo empty($result['avatar_path']) ? "uploads/default.png" : $result['avatar_path']; ?>" 
+  alt="User Image" class="rounded-circle" style="width: 20%; height: 20%">
 <div class="card" style="width: 18rem;">  
     <div class="card-body">
       <h5 class="card-title"><?php 
