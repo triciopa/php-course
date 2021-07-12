@@ -6,13 +6,12 @@
   // $pass = '';
   // $charset = 'utf8mb4';
   
-  //Remote Database Connection
-  $host = 'remotemysql.com';
-  $db = 'JHPJ9kjrwG';
-  $user = 'JHPJ9kjrwG';
-  $pass = 'lAo0TaBKo7';
-  $charset = 'utf8mb4';
-  
+  // Remote Database Connection 
+  $host = 'sql10.freesqldatabase.com';
+  $db = 'sql10424585';
+  $user = 'sql10424585';
+  $pass = 'cLdbmRUMCb';
+  $charset = 'utf8mb4';  
 
   $dsn = "mysql:host=$host;dbname=$db;charset=$charset" ;
 
@@ -29,5 +28,5 @@
   require_once 'user.php';
   $user = new user($pdo);
 
-  $user->addUser("admin","password");
+  // $user->addUser("admin","password");
 ?>
