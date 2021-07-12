@@ -15,10 +15,11 @@
     $isSuccess = $crud->insert($fname, $lname, $dob, $email, $contact, $specialty);
 
     if($isSuccess) {
-      echo '<h1 class="text-center text-success">You have been registered</h1>';
+      // echo '<h1 class="text-center text-success">You have been registered</h1>';
+      include 'includes/successmessage.php';
     }
     else {
-      echo '<h1 class="text-center text-danger">There was an error</h1>';
+      include 'includes/errormessage.php';
     }
   }
 ?>

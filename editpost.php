@@ -17,9 +17,11 @@
     if($result){
       header("Location: viewrecords.php");
     } else {
-      echo 'edit Error';
+      // echo 'edit Error';
+      include 'includes/errormessage.php';
     }
   } else {
-    echo 'load error';
+    // echo 'load error';
+    include 'includes/errormessage.php';
   }
 ?>

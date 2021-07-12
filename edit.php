@@ -7,7 +7,8 @@
   $results = $crud->getSpecs();
 
   if(!isset($_GET['id'])){
-    echo 'error';
+    // echo 'error';
+    include 'includes/errormessage.php';
   } else {
     $id = $_GET['id'];
     $attendee = $crud->getOne($id);

@@ -10,7 +10,7 @@
     if($result){
       header("Location: viewrecords.php");
     } else {
-      echo 'error in deletion';
+      include 'includes/errormessage.php';
     }
   }
 ?>
