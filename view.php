@@ -43,10 +43,14 @@
           // echo $_GET['phone'];
          echo 'Contact number: ' .$result['contactnumber'];
         ?>
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      </p>      
     </div>
   </div>
+
+      <a href="viewrecords.php" class="btn btn-info">Back to list</a>
+      <a href="edit.php?id=<?php echo $result['attendee_id'] ?>" class="btn btn-warning">Edit</a>
+      <a onClick="return confirm('Are you sure to delete this record?');" href="delete.php?id=<?php echo $result['attendee_id'] ?>" class="btn btn-danger">Delete</a>
+
   <?php }?>
 
 <?php require_once 'includes/footer.php'; ?>
