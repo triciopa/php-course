@@ -16,7 +16,7 @@
       echo '<div class="alert alert-danger">User or pass incorrect!</div>';
     } else {
       $_SESSION['username'] = $username;
-      $_SESSION['id'] = $result['id'];
+      $_SESSION['userid'] = $result['id'];
       header('Location: viewrecords.php');
     }
   }
