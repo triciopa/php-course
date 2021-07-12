@@ -17,7 +17,7 @@
     if($result){
       header("Location: viewrecords.php");
     } else {
-      echo 'edit error';
+      echo 'edit Error';
     }
   } else {
     echo 'load error';
