@@ -32,8 +32,17 @@
     }
 
     public function getAll(){
-      $sql = "SELECT * FROM attendee a inner join specialties s on a.specialty_id = s.specialty_id";
+      $sql = "SELECT * FROM attendee a INNER JOIN specialties s ON a.specialty_id = s.specialty_id";
       $result = $this->db->query($sql);
+      return $result;
+    }
+
+    public function getOne($id){
+      $sql = "SELECT * FROM attendee a INNER JOIN specialties s ON a.specialty_id = s.specialty_id WHERE attendee_id = :id";
+      $stmt = $this->db->prepare($sql);
+      $stmt->bindparam(':id',$id);
+      $stmt->execute();
+      $result = $stmt->fetch();
       return $result;
     }
 
