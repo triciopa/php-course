@@ -12,19 +12,20 @@
         if ($result['num'] > 0) {
           return false;
         } else {
+          $new_pass = md5($pass.$user);
           // define SQL statement to be executed
           $sql = "INSERT INTO users (username,password) VALUES (:user, :pass)";
           // prepare the SQL statement for execution
           $stmt = $this->db->prepare($sql);
           // bind all placeholders to the actual values
           $stmt->bindparam(':user',$user);
-          $stmt->bindparam(':pass',$pass);
+          $stmt->bindparam(':pass',$new_pass);
           $stmt->execute();
           return true;
-        } catch (PDOException $e) {
-          echo $e->getMessage();
-          return false;
         }
+      } catch (PDOException $e) {
+        echo $e->getMessage();
+        return false;
       }
     }
 
