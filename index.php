@@ -2,6 +2,8 @@
   $title = 'Index';
   require_once 'includes/header.php';
   require_once 'db/conn.php';
+
+  $results = $crud->getSpecs();
 ?>
 
   <h1 class="text-center">Registration for IT conference</h1>
@@ -27,10 +29,14 @@
     <div class="mb-3">
       <label for="specialty" class="form-label">Area of Expertise</label>
       <select class="form-select" id="specialty" name="specialty">
-        <option value="1" selected>Database Admin</option>
+        <!-- <option value="1" selected>Database Admin</option>
         <option value="2">Software Developer</option>
         <option value="3">Web Administrator</option>
-        <option value="4">Other</option>
+        <option value="4">Other</option> -->
+
+        <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
+          <option value="<?php echo $r['specialty_id'] ?>"><?php echo $r['name'] ?></option>
+        <?php }?>
       </select>
     </div>
 
