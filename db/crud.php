@@ -52,5 +52,29 @@
       return $result;
     }
 
+    public function edit($id, $fname, $lname, $dob, $email, $contact, $specialty){
+      try {
+        $sql = "UPDATE `attendee` SET `firstname`=:fname, `lastname`=:lname,
+        `dateofbirth`=:dob,`email`=:email, `contactnumber`=:contact,
+        `specialty_id`=:specialty WHERE attendee_id = :id";
+
+        $stmt = $this->db->prepare($sql);
+        // bind all placeholders to the actual values
+        $stmt->bindparam(':id',$id);
+        $stmt->bindparam(':fname',$fname);
+        $stmt->bindparam(':lname',$lname);
+        $stmt->bindparam(':dob',$dob);
+        $stmt->bindparam(':email',$email);
+        $stmt->bindparam(':contact',$contact);
+        $stmt->bindparam(':specialty',$specialty);
+
+        $stmt->execute();
+        return true;
+      } catch (PDOException $e) {
+        echo $e->getMessage();
+        return false;
+      }
+    }
+
   }
 ?>
